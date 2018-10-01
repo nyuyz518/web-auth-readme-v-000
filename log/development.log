@@ -1280,3 +1280,340 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+
+
+Started GET "/search" for ::1 at 2018-09-30 22:31:10 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-09-30 22:32:29 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2018-09-30 22:32:32 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2018-09-30 22:36:33 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=ZZD504XR2KOEILYEYYNI2TTOPP0BYTWW0C5JNHTYZ534OTYN&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=CYHFMFDBB305KRU0H0Z4AGLIX5KV5EMAOVFCFVQCHNUK4IRH" for ::1 at 2018-09-30 22:36:36 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for SessionsController):
+  .bundle/gems/actionpack-4.2.5/lib/abstract_controller/base.rb:132:in `process'
+  .bundle/gems/actionview-4.2.5/lib/action_view/rendering.rb:30:in `process'
+  .bundle/gems/actionpack-4.2.5/lib/action_controller/metal.rb:196:in `dispatch'
+  .bundle/gems/actionpack-4.2.5/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  .bundle/gems/actionpack-4.2.5/lib/action_controller/metal.rb:237:in `block in action'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/journey/router.rb:30:in `each'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/journey/router.rb:30:in `serve'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/routing/route_set.rb:817:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/etag.rb:24:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/conditionalget.rb:25:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/head.rb:13:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/flash.rb:260:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/session/abstract/id.rb:225:in `context'
+  .bundle/gems/rack-1.6.10/lib/rack/session/abstract/id.rb:220:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  .bundle/gems/activerecord-4.2.5/lib/active_record/query_cache.rb:36:in `call'
+  .bundle/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  .bundle/gems/activerecord-4.2.5/lib/active_record/migration.rb:377:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/methodoverride.rb:22:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/runtime.rb:18:in `call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/sendfile.rb:113:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/content_length.rb:15:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (4.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (121.0ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (263.0ms)
+
+
+Started GET "/auth?code=CYHFMFDBB305KRU0H0Z4AGLIX5KV5EMAOVFCFVQCHNUK4IRH" for ::1 at 2018-09-30 22:40:16 -0400
+
+SyntaxError (/Users/YY/Flatiron/M3/lab/web-auth-readme-v-000/app/controllers/sessions_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/sessions_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (131.3ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (95.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (217.6ms)
+
+
+Started GET "/search" for ::1 at 2018-09-30 22:49:18 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=ZZD504XR2KOEILYEYYNI2TTOPP0BYTWW0C5JNHTYZ534OTYN&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=AG1DMRJFYSGQ1HW5PB5OPIADRDVBUJH0FGYCWVF30OIY4P3N" for ::1 at 2018-09-30 22:49:22 -0400
+
+SyntaxError (/Users/YY/Flatiron/M3/lab/web-auth-readme-v-000/app/controllers/sessions_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/sessions_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.8ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (122.8ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (247.1ms)
+
+
+Started GET "/auth?code=AG1DMRJFYSGQ1HW5PB5OPIADRDVBUJH0FGYCWVF30OIY4P3N" for ::1 at 2018-09-30 22:50:49 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AG1DMRJFYSGQ1HW5PB5OPIADRDVBUJH0FGYCWVF30OIY4P3N"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 353ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-09-30 22:50:49 -0400
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 610ms (Views: 609.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2018-09-30 22:50:50 -0400
+
+
+Started GET "/auth?code=XP4JG3QD32YSP1BMRXUWGDA30CJW1MUTPXX30QKRQI0GNJFE" for ::1 at 2018-09-30 22:51:03 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"XP4JG3QD32YSP1BMRXUWGDA30CJW1MUTPXX30QKRQI0GNJFE"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 138ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-09-30 22:52:33 -0400
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 354ms (Views: 342.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-09-30 22:55:52 -0400
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 88ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2018-09-30 22:55:57 -0400
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friend" for ::1 at 2018-09-30 22:56:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/friend"):
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/methodoverride.rb:22:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/runtime.rb:18:in `call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/sendfile.rb:113:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/content_length.rb:15:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (54.8ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (208.0ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (118.0ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.7ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (240.4ms)
+
+
+Started GET "/friends" for ::1 at 2018-09-30 22:56:07 -0400
+Processing by SearchesController#friends as HTML
+  Rendered searches/friends.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 715ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2018-09-30 22:56:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/create"):
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/methodoverride.rb:22:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/runtime.rb:18:in `call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/sendfile.rb:113:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/content_length.rb:15:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (132.1ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (218.6ms)
+
+
+Started GET "/search" for ::1 at 2018-09-30 22:56:37 -0400
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 104ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/friends" for ::1 at 2018-09-30 22:56:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/search/friends"):
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  .bundle/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/methodoverride.rb:22:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/runtime.rb:18:in `call'
+  .bundle/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/sendfile.rb:113:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  .bundle/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/content_length.rb:15:in `call'
+  .bundle/gems/rack-1.6.10/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/YY/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (207.3ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (100.3ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered .bundle/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (211.1ms)
